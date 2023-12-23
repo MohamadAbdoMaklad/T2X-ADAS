@@ -1,0 +1,9 @@
+../Src/UART_program.c:22:6:UART_vInit	8	static
+../Src/UART_program.c:118:6:UART_vSendData	16	static
+../Src/UART_program.c:140:6:UART_vSendString	24	static
+../Src/UART_program.c:151:6:UART_vSendNumber	32	static
+../Src/UART_program.c:175:7:UART_u8ReceiveData	24	static
+../Src/UART_program.c:205:7:UART_u8ReturnData	24	static
+../Src/UART_program.c:219:6:UART_SetCallBack	16	static
+../Src/UART_program.c:233:6:USART1_IRQHandler	8	static
+../Src/UART_program.c:243:6:USART2_IRQHandler	8	static

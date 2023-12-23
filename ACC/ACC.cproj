@@ -1,0 +1,358 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="14.0">
+  <PropertyGroup>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>7.0</ProjectVersion>
+    <ToolchainName>com.Atmel.AVRGCC8.C</ToolchainName>
+    <ProjectGuid>dce6c7e3-ee26-4d79-826b-08594b9ad897</ProjectGuid>
+    <avrdevice>ATmega128</avrdevice>
+    <avrdeviceseries>none</avrdeviceseries>
+    <OutputType>Executable</OutputType>
+    <Language>C</Language>
+    <OutputFileName>$(MSBuildProjectName)</OutputFileName>
+    <OutputFileExtension>.elf</OutputFileExtension>
+    <OutputDirectory>$(MSBuildProjectDirectory)\$(Configuration)</OutputDirectory>
+    <AssemblyName>ACC</AssemblyName>
+    <Name>ACC</Name>
+    <RootNamespace>ACC</RootNamespace>
+    <ToolchainFlavour>Native</ToolchainFlavour>
+    <KeepTimersRunning>true</KeepTimersRunning>
+    <OverrideVtor>false</OverrideVtor>
+    <CacheFlash>true</CacheFlash>
+    <ProgFlashFromRam>true</ProgFlashFromRam>
+    <RamSnippetAddress>0x20000000</RamSnippetAddress>
+    <UncachedRange />
+    <preserveEEPROM>true</preserveEEPROM>
+    <OverrideVtorValue>exception_table</OverrideVtorValue>
+    <BootSegment>2</BootSegment>
+    <ResetRule>0</ResetRule>
+    <eraseonlaunchrule>0</eraseonlaunchrule>
+    <EraseKey />
+    <avrtool>com.atmel.avrdbg.tool.simulator</avrtool>
+    <avrtoolserialnumber />
+    <avrdeviceexpectedsignature>0x1E9702</avrdeviceexpectedsignature>
+    <com_atmel_avrdbg_tool_simulator>
+      <ToolOptions xmlns="">
+        <InterfaceProperties>
+        </InterfaceProperties>
+      </ToolOptions>
+      <ToolType xmlns="">com.atmel.avrdbg.tool.simulator</ToolType>
+      <ToolNumber xmlns="">
+      </ToolNumber>
+      <ToolName xmlns="">Simulator</ToolName>
+    </com_atmel_avrdbg_tool_simulator>
+    <AsfFrameworkConfig>
+      <framework-data xmlns="">
+        <options />
+        <configurations />
+        <files />
+        <documentation help="" />
+        <offline-documentation help="" />
+        <dependencies>
+          <content-extension eid="atmel.asf" uuidref="Atmel.ASF" version="3.40.0" />
+        </dependencies>
+      </framework-data>
+    </AsfFrameworkConfig>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <ToolchainSettings>
+      <AvrGcc>
+        <avrgcc.common.Device>-mmcu=atmega128 -B "%24(PackRepoDir)\atmel\ATmega_DFP\1.7.374\gcc\dev\atmega128"</avrgcc.common.Device>
+        <avrgcc.common.optimization.RelaxBranches>True</avrgcc.common.optimization.RelaxBranches>
+        <avrgcc.common.outputfiles.hex>True</avrgcc.common.outputfiles.hex>
+        <avrgcc.common.outputfiles.lss>True</avrgcc.common.outputfiles.lss>
+        <avrgcc.common.outputfiles.eep>True</avrgcc.common.outputfiles.eep>
+        <avrgcc.common.outputfiles.srec>True</avrgcc.common.outputfiles.srec>
+        <avrgcc.common.outputfiles.usersignatures>False</avrgcc.common.outputfiles.usersignatures>
+        <avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>True</avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>
+        <avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>
+        <avrgcc.compiler.symbols.DefSymbols>
+          <ListValues>
+            <Value>NDEBUG</Value>
+          </ListValues>
+        </avrgcc.compiler.symbols.DefSymbols>
+        <avrgcc.compiler.directories.IncludePaths>
+          <ListValues>
+            <Value>%24(PackRepoDir)\atmel\ATmega_DFP\1.7.374\include\</Value>
+          </ListValues>
+        </avrgcc.compiler.directories.IncludePaths>
+        <avrgcc.compiler.optimization.level>Optimize for size (-Os)</avrgcc.compiler.optimization.level>
+        <avrgcc.compiler.optimization.PackStructureMembers>True</avrgcc.compiler.optimization.PackStructureMembers>
+        <avrgcc.compiler.optimization.AllocateBytesNeededForEnum>True</avrgcc.compiler.optimization.AllocateBytesNeededForEnum>
+        <avrgcc.compiler.warnings.AllWarnings>True</avrgcc.compiler.warnings.AllWarnings>
+        <avrgcc.linker.libraries.Libraries>
+          <ListValues>
+            <Value>libm</Value>
+          </ListValues>
+        </avrgcc.linker.libraries.Libraries>
+        <avrgcc.assembler.general.IncludePaths>
+          <ListValues>
+            <Value>%24(PackRepoDir)\atmel\ATmega_DFP\1.7.374\include\</Value>
+          </ListValues>
+        </avrgcc.assembler.general.IncludePaths>
+      </AvrGcc>
+    </ToolchainSettings>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <ToolchainSettings>
+      <AvrGcc>
+        <avrgcc.common.Device>-mmcu=atmega128 -B "%24(PackRepoDir)\atmel\ATmega_DFP\1.7.374\gcc\dev\atmega128"</avrgcc.common.Device>
+        <avrgcc.common.optimization.RelaxBranches>True</avrgcc.common.optimization.RelaxBranches>
+        <avrgcc.common.outputfiles.hex>True</avrgcc.common.outputfiles.hex>
+        <avrgcc.common.outputfiles.lss>True</avrgcc.common.outputfiles.lss>
+        <avrgcc.common.outputfiles.eep>True</avrgcc.common.outputfiles.eep>
+        <avrgcc.common.outputfiles.srec>True</avrgcc.common.outputfiles.srec>
+        <avrgcc.common.outputfiles.usersignatures>False</avrgcc.common.outputfiles.usersignatures>
+        <avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>True</avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>
+        <avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>
+        <avrgcc.compiler.symbols.DefSymbols>
+          <ListValues>
+            <Value>DEBUG</Value>
+          </ListValues>
+        </avrgcc.compiler.symbols.DefSymbols>
+        <avrgcc.compiler.directories.IncludePaths>
+          <ListValues>
+            <Value>%24(PackRepoDir)\atmel\ATmega_DFP\1.7.374\include\</Value>
+            <Value>../FreeRTOS</Value>
+            <Value>../HAL/L298N</Value>
+            <Value>../LIB</Value>
+            <Value>../MCAL/DIO</Value>
+            <Value>C:\Zeyad\NTI Material\ACC test\ACC\MCAL\T0</Value>
+            <Value>../MCAL/TC2</Value>
+            <Value>../MCAL/UART0</Value>
+            <Value>../MCAL/ICU</Value>
+          </ListValues>
+        </avrgcc.compiler.directories.IncludePaths>
+        <avrgcc.compiler.optimization.level>Optimize debugging experience (-Og)</avrgcc.compiler.optimization.level>
+        <avrgcc.compiler.optimization.PackStructureMembers>True</avrgcc.compiler.optimization.PackStructureMembers>
+        <avrgcc.compiler.optimization.AllocateBytesNeededForEnum>True</avrgcc.compiler.optimization.AllocateBytesNeededForEnum>
+        <avrgcc.compiler.optimization.DebugLevel>Default (-g2)</avrgcc.compiler.optimization.DebugLevel>
+        <avrgcc.compiler.warnings.AllWarnings>True</avrgcc.compiler.warnings.AllWarnings>
+        <avrgcc.linker.libraries.Libraries>
+          <ListValues>
+            <Value>libm</Value>
+          </ListValues>
+        </avrgcc.linker.libraries.Libraries>
+        <avrgcc.assembler.general.IncludePaths>
+          <ListValues>
+            <Value>%24(PackRepoDir)\atmel\ATmega_DFP\1.7.374\include\</Value>
+          </ListValues>
+        </avrgcc.assembler.general.IncludePaths>
+        <avrgcc.assembler.debugging.DebugLevel>Default (-Wa,-g)</avrgcc.assembler.debugging.DebugLevel>
+      </AvrGcc>
+    </ToolchainSettings>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="FreeRTOS\atomic.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\croutine.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\croutine.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\deprecated_definitions.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\event_groups.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\event_groups.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\FreeRTOS.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\FreeRTOSConfig.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\heap_1.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\list.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\list.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\message_buffer.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\mpu_prototypes.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\mpu_wrappers.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\port.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\portable.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\portmacro.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\projdefs.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\queue.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\queue.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\semphr.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\StackMacros.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\stack_macros.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\stream_buffer.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\stream_buffer.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\task.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\tasks.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\timers.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FreeRTOS\timers.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="HAL\L298N\L298N_Cfg.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="HAL\L298N\L298N_Interface.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="HAL\L298N\L298N_Program.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="HAL\Ultrasonic\ultrasonic.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="HAL\Ultrasonic\ultrasonic.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="HAL\Ultrasonic\ULTRASONIC_confiq.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="LIB\FlagsType.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="LIB\LIB_BIT_MATH.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="LIB\LIB_STD.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="main.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="MCAL\DIO\DIO_Interface.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="MCAL\DIO\DIO_Private.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="MCAL\DIO\DIO_Program.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="MCAL\ICU\icu.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="MCAL\ICU\icu.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="MCAL\ICU\ICU_reg.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="MCAL\T0\TMR0_Config.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="MCAL\T0\TMR0_Interface.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="MCAL\T0\TMR0_Private.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="MCAL\T0\TMR0_Program.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="MCAL\T0\TMR0_Register.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="MCAL\TC2\TMR2_Config.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="MCAL\TC2\TMR2_Interface.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="MCAL\TC2\TMR2_Private.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="MCAL\TC2\TMR2_Program.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="MCAL\TC2\TMR2_Register.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="MCAL\UART0\UART0_Config.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="MCAL\UART0\UART0_interface.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="MCAL\UART0\UART0_Private.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="MCAL\UART0\UART0_program.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="MCAL\UART0\UART0_Register.h">
+      <SubType>compile</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="FreeRTOS" />
+    <Folder Include="HAL\L298N" />
+    <Folder Include="HAL\Ultrasonic" />
+    <Folder Include="MCAL" />
+    <Folder Include="HAL" />
+    <Folder Include="LIB" />
+    <Folder Include="MCAL\DIO" />
+    <Folder Include="MCAL\ICU" />
+    <Folder Include="MCAL\UART0" />
+    <Folder Include="MCAL\T0" />
+    <Folder Include="MCAL\TC2" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FreeRTOS\.gitmodules">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="FreeRTOS\CMakeLists.txt">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="FreeRTOS\manifest.yml">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="FreeRTOS\sbom.spdx">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="FreeRTOS\stdint.readme">
+      <SubType>compile</SubType>
+    </None>
+  </ItemGroup>
+  <Import Project="$(AVRSTUDIO_EXE_PATH)\\Vs\\Compiler.targets" />
+</Project>

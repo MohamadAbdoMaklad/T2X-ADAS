@@ -1,0 +1,2 @@
+../Src/IR_program.c:17:7:IR_vDetectObject	24	static
+../Src/IR_program.c:33:7:IR_vNumberOfSlots	16	static

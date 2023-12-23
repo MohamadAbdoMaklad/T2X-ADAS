@@ -1,0 +1,2 @@
+../Src/USNC_program.c:14:6:USNC_vInit	8	static
+../Src/USNC_program.c:21:8:USNC_vGetDistance	16	static

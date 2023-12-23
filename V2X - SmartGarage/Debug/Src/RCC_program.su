@@ -1,0 +1,3 @@
+../Src/RCC_program.c:16:6:RCC_u8InitSysClk	4	static
+../Src/RCC_program.c:41:6:RCC_u8EnablePeripheralClk	16	static
+../Src/RCC_program.c:62:6:RCC_u8DisablePeripheralClk	16	static

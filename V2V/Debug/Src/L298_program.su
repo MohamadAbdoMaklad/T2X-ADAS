@@ -1,0 +1,4 @@
+../Src/L298_program.c:16:6:L298_vInit	24	static
+../Src/L298_program.c:35:6:L298_vCarMove	16	static
+../Src/L298_program.c:55:6:L298_vCarPWM	16	static
+../Src/L298_program.c:61:6:L298_vCarStop	8	static

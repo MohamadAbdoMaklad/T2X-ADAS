@@ -1,0 +1,9 @@
+../Src/SYSTICK_program.c:24:6:SYSTICK_vInit	4	static
+../Src/SYSTICK_program.c:37:6:SYSTICK_vSetBusyWait	16	static
+../Src/SYSTICK_program.c:56:8:SYSTICK_u32GetRemainingTime	16	static
+../Src/SYSTICK_program.c:65:8:SYSTICK_u32GetElapsedTime	16	static
+../Src/SYSTICK_program.c:75:6:SYSTICK_vSetIntervalSingle	16	static
+../Src/SYSTICK_program.c:95:6:SYSTICK_vSetIntervalPeriodic	16	static
+../Src/SYSTICK_program.c:115:6:SysTick_Handler	16	static
+../Src/SYSTICK_program.c:137:6:_delay_us	16	static
+../Src/SYSTICK_program.c:151:6:_delay_ms	16	static
